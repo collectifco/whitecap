@@ -1,0 +1,31 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^drinkwhitecap.com$ [NC]
+RewriteRule ^(.*)$ http://drinkwhitecap.com/$1 [L,R=301]
+
+AddDefaultCharset utf-8
+
+ErrorDocument 404 "<center><h1>e kala mai i a`u</h1><p>Sorry, it looks like that link is broken</p><p><a href='http://drinkwhitecap.com'>Go back to the main page.</a></p><img src='http://cdn.dropmark.com/45268/23c97982ac7de55cacf8852c4ae0c1cd1c8dd5ac/tumblr_mo3lylwpS31suk8vpo1_500.gif'></center>"
+
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript  image/svg+xml image/x-icon
+</ifmodule>
+# END GZIP
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 week"
+ExpiresByType image/jpeg "access 1 week"
+ExpiresByType image/gif "access 1 week"
+ExpiresByType image/png "access 1 week"
+ExpiresByType image/svg "access 1 week"
+ExpiresByType text/css "access 1 week"
+ExpiresByType text/js "access 2 weeks"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 2 weeks"
+ExpiresByType application/javascript "access 2 weeks"
+ExpiresByType application/x-javascript "access 2 weeks"
+ExpiresByType image/x-icon "access 1 month"
+ExpiresByType image/svg+xml "access plus 2 weeks"
+ExpiresDefault "access 2 days"
+</IfModule>

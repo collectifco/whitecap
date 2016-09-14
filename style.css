@@ -1,0 +1,189 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  /*background: #dfe2e3;*/
+  background-color: #a3dbea;
+  color: #444;
+  color: #fff;
+  font-size: 1.125rem;
+  font-family: courier, 'courier new', monospace;
+  /*background-image: url('/assets/waves.svg');*/
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+header {
+  margin-bottom: 4rem;
+}
+
+.content {
+  width: 90%;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-logo,
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 500px) {
+  .header-logo,
+  .footer-logo {
+    width: 50%;
+    max-width: 30rem;
+  }
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.tagline {
+  text-align: center;
+  display: block;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section.address {
+  text-align: center;
+}
+
+.site-nav {
+  text-align: center;
+  display: block;
+  padding: 2rem 1rem;
+}
+
+main {
+  overflow: hidden;
+}
+
+footer {
+  clear: both;
+  display: block;
+  margin-top: 4rem;
+}
+
+footer img {
+  display: none;
+}
+
+table {
+  text-align: left;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+.hours-table {
+  display: inline-block;
+}
+
+.hours__time {
+  font-variant: small-caps;
+}
+
+.hours td:nth-of-typ(2) {
+  text-align: right;
+}
+
+#instafeed {
+  margin-top: 4rem;
+}
+
+#instafeed img {
+  max-width: 30%;
+  float: left;
+  /*margin-right: 5%;*/
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+#instafeed a:nth-of-type(3n) img{
+  margin-right: 0;
+}
+
+.home-main {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.menu {
+  width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  color: #444;
+}
+
+.menu td {
+  vertical-align: top;
+}
+
+.menu-price {
+  text-align: right;
+}
+
+.menu h2,
+.menu h3,
+.menu h4 {
+  margin: 0;
+}
+
+.menu h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.menu-section-heading {
+  /*text-transform: uppercase;*/
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.riding {
+	width: 8rem;
+	margin-top: 2rem;
+}
+
+.riding:hover {
+	transform: rotate(360deg);
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+h3 {
+  text-transform: uppercase;
+}
