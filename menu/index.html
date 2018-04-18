@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Menu • Whitecap Coffee</title>
+    <title>Menu • Whitecap Coffee and Bakeshop</title>
     <link rel="stylesheet" href="/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:site" content="@drinkwhitecap">
+    <meta property="og:site_name" content="Whitecap Coffee and Bakeshop">
+    <meta property="og:title" content="Whitecap Coffee and Bakeshop Menu">
+    <meta property="og:image" content="https://drinkwhitecap.com/assets/img/coffee_and_buscuits.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="og:url" content="https://drinkwhitecap.com/menu/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:image:alt" content="A cup of coffee and a plate of biscuits.">
   </head>
 
   <body>
     <header>
       <a href="/">
-        <img src="/assets/logo-bottom.svg" class="header-logo">
+        <img src="/assets/logo-bottom.svg" class="header-logo" alt="Whitecap Logo">
       </a>
       <nav class="site-nav">
-        <a href="/menu/" class="site-nav__link">COFFEE</a> •
-        <a href="/menu/#gelati" class="site-nav__link">GELATI</a> •
-        <a href="/food/" class="site-nav__link">CRÊPES</a> •
-        <a href="/food/#sushi" class="site-nav__link">SUSHI</a> •
-        <span class="site-nav__link">BAKED GOODS</span>
-      </span>
+        <a href="/menu/" class="site-nav__link" itemprop="servesCuisine">COFFEE</a> •
+        <a href="/menu/#gelati" class="site-nav__link" itemprop="servesCuisine">GELATI</a> •
+        <span class="site-nav__link" itemprop="servesCuisine">BAKESHOP</span>
+        <!-- <span class="site-nav__link"><del>CRÊPES</del></span> -->
+      </nav>
     </header>
 
     <main class="content home-main">
@@ -75,7 +82,7 @@
         <tr>
           <td>V60</td>
           <td>&nbsp;</td>
-          <td class="menu-price">$3.00</td>
+          <td class="menu-price">$3.50</td>
           <td>&nbsp;</td>
         </tr>
         <tr><td></td></tr>
@@ -114,13 +121,12 @@
         <tr class="menu-section-heading"><td>Extras</td></tr>
         <tr><td>Add syrup for 25¢</td></tr>
         <tr><td></td></tr>
-        <tr class="menu-section-heading"><td colspan="4"><center>All Taxes Included</center></td></tr>
       </table>
     </main>
 
     <footer>
       <a href="/">
-        <img src="/assets/logo-top.svg" class="footer-logo">
+        <img src="/assets/logo-top.svg" class="footer-logo" alt="Whitecap Logo">
       </a>
     </footer>
 

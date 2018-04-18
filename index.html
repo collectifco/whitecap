@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Whitecap Coffee • Winkler, Manitoba</title>
+  <title>Whitecap Coffee and Bakeshop • Winkler, Manitoba</title>
   <link rel="stylesheet" href="/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:site_name" content="Whitecap Coffee and Bakeshop">
+  <meta property="og:title" content="Whitecap Coffee and Bakeshop">
+  <meta property="og:description" content="Specialty coffee and baked goods in Winkler, Manitoba. Motivated by a love for people and a passion for things done well.">
+  <meta name="twitter:site" content="@drinkwhitecap">
+  <meta name="twitter:title" content="Whitecap Coffee and Bakeshop ">
+  <meta property="og:image" content="https://drinkwhitecap.com/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="og:url" content="https://drinkwhitecap.com">
+  <meta name="twitter:image:alt" content="Pouring milk into a cappucino.">
 </head>
 
-<body itemscope itemtype="http://schema.org/Restaurant">
-  <header>
+<body itemscope itemtype="http://schema.org/Restaurant" class="page-home">
+
+  <header class="site-header">
     <a href="/">
-      <img src="/assets/logo-bottom.svg" class="header-logo">
+      <!-- <img src="/assets/logo-bottom.svg" class="header-logo"> -->
+      <img src="/assets/logo.svg" class="full-logo" alt="Whitecap Logo">
     </a>
     <nav class="site-nav">
       <a href="/menu/" class="site-nav__link" itemprop="servesCuisine">COFFEE</a> •
       <a href="/menu/#gelati" class="site-nav__link" itemprop="servesCuisine">GELATI</a> •
-      <a href="/food/" class="site-nav__link" itemprop="servesCuisine">CRÊPES</a> •
-      <a href="/food/#sushi" class="site-nav__link" itemprop="servesCuisine">SUSHI</a> •
-      <span class="site-nav__link" itemprop="servesCuisine">BAKED GOODS</span>
-    </span>
+      <span class="site-nav__link" itemprop="servesCuisine">BAKESHOP</span>
+    </nav>
   </header>
+
+
 
   <main class="content home-main">
 
-    <h1>Aloha, we're <span itemprop="name">Whitecap</span></h1>
-    <!-- <p>Motivated by a love for people and a passion for things done well.</p> -->
+    <!-- <h1>Aloha, we're <span itemprop="name">Whitecap</span></h1> -->
+    <p>Motivated by a love for people and a passion for things done well.</p>
 
-    <section class="hours">
+    <div class="container">
+    <section class="hours column">
+      <!-- <p class="a-centre">We're open:</p> -->
       <table class="hours-table">
         <tr>
           <td>
@@ -40,7 +53,15 @@
             Saturday
           </td>
           <td class="hours__time">
-            8am–10pm
+            8am–6pm
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sunday
+          </td>
+          <td class="hours__time">
+            1pm–5pm
           </td>
         </tr>
       </table>
@@ -49,7 +70,7 @@
 
     </section>
 
-    <section class="social">
+    <section class="social column">
       <div>
         <strong>@drinkwhitecap</strong>
         <br>
@@ -58,25 +79,22 @@
         <a href="https://instagram.com/explore/tags/drinkwhitecap/">#drinkwhitecap</a>
       </div>
 
-      <!-- <div id="instafeed">
-      <h2>#drinkwhitecap</h2>
-    </div> -->
+    </section>
 
-  </section>
-
-    <section class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <section class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" column>
       <span itemprop="streetAddress">555 S Railway Ave</span> <br><span itemprop="addressLocality">Winkler</span>, <span itemprop="addressRegion">MB</span>
     </section>
 
     <br>
-    <img src="/assets/riding.svg" class="riding">
+    <img src="/assets/riding.svg" class="riding" alt="">
     <br>
 
   </main>
 
-  <footer>
+
+  <footer class="site-footer">
     <a href="/">
-      <img src="/assets/logo-top.svg" class="footer-logo">
+      <img src="/assets/hand-board.svg" class="site-footer__illo" alt="back to top">
     </a>
   </footer>
 
@@ -91,19 +109,6 @@
   </script>
 
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
-
-  <!-- <script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
-
-  <script type="text/javascript">
-    var feed = new Instafeed({
-      get: 'tagged',
-      tagName: 'drinkwhitecap',
-      resolution: 'low_resolution',
-      limit: '9',
-      clientId: 'c1d2b24f87524017a53e9256040f4350'
-    });
-    feed.run();
-  </script> -->
 
 </body>
 </html>
